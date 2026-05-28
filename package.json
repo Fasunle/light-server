@@ -15,16 +15,16 @@
   },
   "license": "ISC",
   "author": "Fasunle Kehinde <kfasunle@gmail.com>",
-  "type": "module",
-  "main": "index.ts",
   "scripts": {
-    "dev": "bun run index.ts",
-    "start": "bun run dist/index.js",
+    "dev": "bun run src/main.ts",
+    "start": "bun run dist/main.js",
     "build": "tsc",
     "format": "prettier --write .",
-    "prebuild": "rm -rf dist"
+    "prebuild": "rm -rf dist",
+    "postbuild": "mv dist/src/* dist && rm -rf dist/src"
   },
   "dependencies": {
+    "dotenv": "^17.4.2",
     "find-my-address": "^0.0.0",
     "micro": "^10.0.1"
   },
