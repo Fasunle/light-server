@@ -21,7 +21,7 @@
     "dev": "bun run index.ts",
     "start": "bun run dist/index.js",
     "build": "tsc",
-    "format": "prettier format .",
+    "format": "prettier --write .",
     "prebuild": "rm -rf dist"
   },
   "dependencies": {
@@ -29,6 +29,7 @@
     "micro": "^10.0.1"
   },
   "devDependencies": {
+    "prettier": "^3.8.3",
     "typescript": "^6.0.3"
   }
 }
