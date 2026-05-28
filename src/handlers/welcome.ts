@@ -9,4 +9,3 @@ export const welcome = createHandler(async () => {
     data: 'Welcome to the API!',
   };
 });
-// (req, res) => send(res, 200, { data: 'Welcome to the API!' })

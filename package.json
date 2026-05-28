@@ -18,18 +18,19 @@
   "scripts": {
     "dev": "bun run src/main.ts",
     "start": "bun run dist/main.js",
-    "build": "tsc",
+    "build": "tsc && tsc-alias",
     "format": "prettier --write .",
     "prebuild": "rm -rf dist",
     "postbuild": "mv dist/src/* dist && rm -rf dist/src"
   },
   "dependencies": {
     "dotenv": "^17.4.2",
-    "find-my-address": "^0.0.0",
+    "find-my-way": "^9.6.0",
     "micro": "^10.0.1"
   },
   "devDependencies": {
     "prettier": "^3.8.3",
+    "tsc-alias": "^1.8.17",
     "typescript": "^6.0.3"
   }
 }
