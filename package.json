@@ -1,0 +1,34 @@
+{
+  "name": "test-server",
+  "version": "1.0.0",
+  "description": "A simple test server designed to check my vm deployment",
+  "keywords": [
+    "light-server"
+  ],
+  "homepage": "https://github.com/Fasunle/light-server#readme",
+  "bugs": {
+    "url": "https://github.com/Fasunle/light-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fasunle/light-server.git"
+  },
+  "license": "ISC",
+  "author": "Fasunle Kehinde <kfasunle@gmail.com>",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "bun run index.ts",
+    "start": "bun run dist/index.js",
+    "build": "tsc",
+    "format": "prettier format .",
+    "prebuild": "rm -rf dist"
+  },
+  "dependencies": {
+    "find-my-address": "^0.0.0",
+    "micro": "^10.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
